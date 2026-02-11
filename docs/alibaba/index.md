@@ -18,7 +18,7 @@
 
 | 模型 | 任务 | 模型ID | 文档 |
 |------|------|--------|------|
-| 文生图 | text-to-image | `wan2.6-image` | [查看](wan2.6/wan2.6-t2i.md) |
+| 文生图 | text-to-image | `wan2.6-t2i` | [查看](wan2.6/wan2.6-t2i.md) |
 | 图生图 | image-to-image | `wan2.6-image` | [查看](wan2.6/wan2.6-i2i.md) |
 | 文生视频 | text-to-video | `wan2.6-t2v` | [查看](wan2.6/wan2.6-t2v.md) |
 | 图生视频 | image-to-video | `wan2.6-i2v` / `wan2.6-i2v-flash` | [查看](wan2.6/wan2.6-i2v.md) |
@@ -31,7 +31,7 @@
 | 模型 | 任务 | 模型ID | 文档 |
 |------|------|--------|------|
 | 文生图 | text-to-image | `wan2.5-t2i-preview` | [查看](wan2.5/wan2.5-t2i.md) |
-| 图像编辑 | image-to-image | `wan2.5-i2i-preview` | [查看](wan2.5/wan2.5-i2i.md) |
+| 图像编辑 | image-editing | `wan2.5-i2i-preview` | [查看](wan2.5/wan2.5-i2i.md) |
 | 文生视频 | text-to-video | `wan2.5-t2v-preview` | [查看](wan2.5/wan2.5-t2v.md) |
 | 图生视频 | image-to-video | `wan2.5-i2v-preview` | [查看](wan2.5/wan2.5-i2v.md) |
 
@@ -39,18 +39,28 @@
 
 ### 图像生成
 
-| 模型 | 价格 |
-|------|------|
-| wan2.6-image（文生图/图生图） | 0.2 元/张 |
-| wan2.5-t2i-preview | 0.2 元/张 |
-| wan2.5-i2i-preview | 0.2 元/张 |
+| 模型 | 价格 | 免费额度 |
+|------|------|----------|
+| wan2.6-t2i | 0.20 元/张 | 50 张 |
+| wan2.6-image（图生图） | 0.20 元/张 | 50 张 |
+| wan2.5-t2i-preview | 0.20 元/张 | 50 张 |
+| wan2.5-i2i-preview | 0.220177 元/张 | 50 张 |
 
 ### 视频生成
 
-| 分辨率 | 价格 |
-|--------|------|
-| 720P | 0.6 元/秒 |
-| 1080P | 1 元/秒 |
+| 模型 | 类型 | 分辨率 | 价格 | 免费额度 |
+|------|------|--------|------|----------|
+| wan2.6-t2v | — | 720P | 0.6 元/秒 | 50 秒 |
+| wan2.6-t2v | — | 1080P | 1 元/秒 | 50 秒 |
+| wan2.6-i2v | 有声视频 | 720P | 0.6 元/秒 | 50 秒 |
+| wan2.6-i2v | 有声视频 | 1080P | 1 元/秒 | 50 秒 |
+| wan2.6-i2v-flash | 有声（audio=true） | 720P / 1080P | 0.3 / 0.5 元/秒 | 50 秒 |
+| wan2.6-i2v-flash | 无声（audio=false） | 720P / 1080P | 0.15 / 0.25 元/秒 | 50 秒 |
+| wan2.6-r2v | 有声视频 | 720P | 0.6 元/秒 | 50 秒 |
+| wan2.6-r2v | 有声视频 | 1080P | 1 元/秒 | 50 秒 |
+| wan2.6-r2v-flash | 有声（audio=true） | 720P / 1080P | 0.3 / 0.5 元/秒 | 50 秒 |
+| wan2.6-r2v-flash | 无声（audio=false） | 720P / 1080P | 0.15 / 0.25 元/秒 | 50 秒 |
+| wan2.5-t2v-preview | — | 480P / 720P / 1080P | 0.3 / 0.6 / 1 元/秒 | 50 秒 |
+| wan2.5-i2v-preview | 有声视频 | 480P / 720P / 1080P | 0.3 / 0.6 / 1 元/秒 | 50 秒 |
 
-!!! note "免费额度"
-    开通百炼后 90 天内可享受免费额度：文生图 50 张、视频类各 50 秒。
+数据来源：[阿里云百炼模型定价](https://help.aliyun.com/zh/model-studio/model-pricing)

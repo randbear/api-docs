@@ -123,6 +123,15 @@ curl ...
 | ... | ... | ... |
 ```
 
+## 部署
+
+- 平台：Cloudflare Pages
+- 项目名：api-docs
+- 站点 URL：https://api-docs-9dh.pages.dev
+- CF 账号：Xiatian.zhang@gmail.com（account_id: `452198ca3aab06cd501178fe329902e1`）
+- 生产分支：main
+- 部署命令：`CLOUDFLARE_ACCOUNT_ID=452198ca3aab06cd501178fe329902e1 npx wrangler pages deploy site --project-name api-docs --branch main`
+
 ## 规范
 
 - 所有文档使用中文

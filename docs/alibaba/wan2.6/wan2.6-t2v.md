@@ -1,134 +1,164 @@
 ---
-title: Wan2.6 文生视频
+title: 万相 2.6 文生视频
 provider: alibaba
 model_id: wan2.6-t2v
-task: 文生视频 (text-to-video)
+task: text-to-video
 ---
 
-# Wan2.6 文生视频
+# 万相 2.6 文生视频
 
-> 基于 Wan2.6 大模型的文本生成视频服务，支持 480P/720P/1080P 多种分辨率，视频时长 2-15 秒，支持音频输入与多镜头模式。
+> 阿里云百炼万相 2.6 文生视频模型，支持 2~15 秒视频生成，720P/1080P 分辨率，多镜头叙事和音频生成。
 
 ## 模型信息
 
 | 属性 | 值 |
 |------|-----|
 | 模型ID | `wan2.6-t2v` |
-| 任务类型 | 文生视频 (text-to-video) |
-| 输入 | 文本提示词 |
-| 输出 | 视频 (mp4) |
-| 视频时长 | 2-15 秒（任意整数） |
-| 视频分辨率 | 480P / 720P / 1080P（默认 1920*1080） |
-
-### 支持的分辨率
-
-| 分辨率等级 | 尺寸 |
-|-----------|------|
-| 480P | 832*480, 480*832, 624*624 |
-| 720P | 1280*720, 720*1280, 960*960, 1088*832, 832*1088 |
-| 1080P | 1920*1080（默认）, 1080*1920, 1440*1440, 1632*1248, 1248*1632 |
+| 任务类型 | text-to-video |
+| 输入 | 文本提示词（最长 1500 字符） |
+| 输出 | 视频（URL，24小时有效） |
+| 视频时长 | 2~15 秒 |
+| 视频分辨率 | 720P、1080P |
 
 ## API 调用
 
 ### 端点
 
-**创建任务（必须使用异步模式）：**
+**创建任务（仅支持异步）：**
 
-```
-POST https://dashscope.aliyuncs.com/api/v1/services/aigc/video-generation/video-synthesis
-```
-
-> 请求头必须包含 `X-DashScope-Async: enable` 以启用异步模式。
+`POST https://dashscope.aliyuncs.com/api/v1/services/aigc/video-generation/video-synthesis`
 
 **查询任务结果：**
 
-```
-GET https://dashscope.aliyuncs.com/api/v1/tasks/{task_id}
-```
+`GET https://dashscope.aliyuncs.com/api/v1/tasks/{task_id}`
 
-> 建议每 15 秒轮询一次，QPS 限制为 20。结果链接有效期 24 小时。
+### 请求头
+
+| 参数 | 类型 | 必填 | 说明 |
+|------|------|------|------|
+| Content-Type | string | 是 | `application/json` |
+| Authorization | string | 是 | `Bearer sk-xxxx` |
+| X-DashScope-Async | string | 是 | 必须设为 `enable` |
 
 ### 请求参数
 
-| 参数 | 类型 | 必填 | 默认值 | 说明 |
-|------|------|------|--------|------|
-| model | string | 是 | - | 模型ID，固定为 `wan2.6-t2v` |
-| input.prompt | string | 是 | - | 文本提示词，最长 1500 字符 |
-| input.negative_prompt | string | 否 | - | 负向提示词，最长 500 字符 |
-| input.audio_url | string | 否 | - | 音频 URL，支持 mp3/wav，时长 3-30 秒，≤15MB |
-| parameters.size | string | 否 | `1920*1080` | 视频分辨率，格式为 `宽*高` |
-| parameters.duration | integer | 否 | 5 | 视频时长，范围 2-15 秒 |
-| parameters.prompt_extend | bool | 否 | true | 是否开启智能改写 |
-| parameters.shot_type | string | 否 | `single` | 镜头模式：`single`（单镜头）/ `multi`（多镜头） |
-| parameters.watermark | bool | 否 | false | 是否添加 AI 水印 |
-| parameters.seed | integer | 否 | - | 随机种子，范围 [0, 2147483647] |
+| 参数 | 类型 | 必填 | 默认值 | 取值范围 | 说明 |
+|------|------|------|--------|----------|------|
+| model | string | 是 | — | `wan2.6-t2v` | 模型ID |
+| input.prompt | string | 是 | — | 最长 1500 字符 | 文本提示词 |
+| input.negative_prompt | string | 否 | — | 最长 500 字符 | 反向提示词 |
+| input.audio_url | string | 否 | — | wav/mp3，3~30秒，最大15MB | 音频文件 URL |
+| parameters.size | string | 否 | 模型默认 | 720P/1080P 各比例 | 视频分辨率 |
+| parameters.duration | integer | 否 | 5 | 2~15 | 视频时长（秒） |
+| parameters.prompt_extend | boolean | 否 | true | true/false | 启用提示词优化 |
+| parameters.shot_type | string | 否 | `single` | `single`/`multi` | 单镜头/多镜头叙事 |
+| parameters.watermark | boolean | 否 | false | true/false | 添加"AI生成"水印 |
+| parameters.seed | integer | 否 | 随机 | 0~2147483647 | 随机种子 |
+
+### 支持的分辨率
+
+**720P：**
+
+| 宽高比 | 分辨率 |
+|--------|--------|
+| 16:9 | 1280×720 |
+| 9:16 | 720×1280 |
+| 1:1 | 960×960 |
+| 4:3 | 1088×832 |
+| 3:4 | 832×1088 |
+
+**1080P：**
+
+| 宽高比 | 分辨率 |
+|--------|--------|
+| 16:9 | 1920×1080 |
+| 9:16 | 1080×1920 |
+| 1:1 | 1440×1440 |
+| 4:3 | 1632×1248 |
+| 3:4 | 1248×1632 |
 
 ### 请求示例
 
 ```bash
-curl 'https://dashscope.aliyuncs.com/api/v1/services/aigc/video-generation/video-synthesis' \
- -H 'X-DashScope-Async: enable' \
- -H "Authorization: Bearer $DASHSCOPE_API_KEY" \
- -H 'Content-Type: application/json' \
- -d '{
-  "model": "wan2.6-t2v",
-  "input": {
-    "prompt": "一只小猫在月光下奔跑",
-    "negative_prompt": "低质量"
-  },
-  "parameters": {
-    "size": "1280*720",
-    "duration": 10,
-    "prompt_extend": true
-  }
-}'
+curl -X POST 'https://dashscope.aliyuncs.com/api/v1/services/aigc/video-generation/video-synthesis' \
+  -H 'X-DashScope-Async: enable' \
+  -H "Authorization: Bearer $DASHSCOPE_API_KEY" \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "model": "wan2.6-t2v",
+    "input": {
+      "prompt": "一只小猫在月光下奔跑",
+      "negative_prompt": "低质量"
+    },
+    "parameters": {
+      "size": "1280*720",
+      "duration": 10,
+      "prompt_extend": true
+    }
+  }'
 ```
 
-### 异步获取结果
+### 查询任务结果
 
 ```bash
-curl -X GET \
- 'https://dashscope.aliyuncs.com/api/v1/tasks/{task_id}' \
- -H "Authorization: Bearer $DASHSCOPE_API_KEY"
+curl -X GET 'https://dashscope.aliyuncs.com/api/v1/tasks/{task_id}' \
+  -H "Authorization: Bearer $DASHSCOPE_API_KEY"
 ```
 
-### 响应示例
-
-**创建任务响应：**
+### 响应示例（任务创建）
 
 ```json
 {
   "output": {
     "task_status": "PENDING",
-    "task_id": "xxx"
+    "task_id": "0385dc79-5ff8-4d82-bcb6-xxxxxx"
   },
-  "request_id": "xxx"
+  "request_id": "4909100c-7b5a-9f92-bfe5-xxxxxx"
 }
 ```
 
-**查询结果（成功）：**
+### 响应示例（任务完成）
 
 ```json
 {
+  "request_id": "caa62a12-8841-41a6-8af2-xxxxxx",
   "output": {
-    "task_id": "xxx",
+    "task_id": "eff1443c-ccab-4676-aad3-xxxxxx",
     "task_status": "SUCCEEDED",
-    "video_url": "https://...mp4",
-    "orig_prompt": "..."
+    "submit_time": "2025-09-29 14:18:52.331",
+    "end_time": "2025-09-29 14:23:39.407",
+    "video_url": "https://dashscope-result-sh.oss-accelerate.aliyuncs.com/xxx.mp4"
   },
   "usage": {
     "duration": 10,
     "size": "1280*720",
-    "output_video_duration": 10
+    "output_video_duration": 10,
+    "SR": 720
   }
 }
 ```
 
-> 响应中的视频 URL 有效期为 24 小时，请及时下载保存。
+### 任务状态
+
+| 状态 | 说明 |
+|------|------|
+| PENDING | 排队中 |
+| RUNNING | 处理中 |
+| SUCCEEDED | 成功 |
+| FAILED | 失败 |
+| CANCELED | 已取消 |
+| UNKNOWN | 未知/已过期 |
 
 ## 计费
 
-| 分辨率 | 价格 |
-|--------|------|
-| 720P | 0.6 元/秒 |
-| 1080P | 1 元/秒 |
+| 模型 | 分辨率 | 价格 | 免费额度 |
+|------|--------|------|----------|
+| wan2.6-t2v | 720P | 0.6 元/秒 | 50 秒 |
+| wan2.6-t2v | 1080P | 1 元/秒 | 50 秒 |
+
+按成功生成的视频秒数计费。视频 URL 24 小时内有效，请及时下载。建议轮询间隔 15 秒，处理时间通常 1~5 分钟。
+
+## 数据来源
+
+- API 参考：https://help.aliyun.com/zh/model-studio/text-to-video-api-reference
+- 计费信息：https://help.aliyun.com/zh/model-studio/model-pricing
