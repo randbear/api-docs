@@ -1,0 +1,18 @@
+# AI API Docs
+
+> AI 模型 API 文档集合。每个链接指向 markdown 格式的完整 API 文档，包含端点、参数、示例和计费。
+
+## 阿里云百炼 - 万相 2.6
+
+- [wan2.6 文生图](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-t2i.md): model_id=wan2.6-image, task=text-to-image, 同步/异步, 最高1280x1280, 0.2元/张
+- [wan2.6 图生图](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-i2i.md): model_id=wan2.6-image, task=image-to-image, 单图编辑/多图融合, 0.2元/张
+- [wan2.6 文生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-t2v.md): model_id=wan2.6-t2v, task=text-to-video, 2-15秒, 480P/720P/1080P, 多镜头
+- [wan2.6 图生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-i2v.md): model_id=wan2.6-i2v|wan2.6-i2v-flash, task=image-to-video, 2-15秒, flash支持音频生成
+- [wan2.6 视频生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-v2v.md): model_id=wan2.6-r2v|wan2.6-r2v-flash, task=reference-to-video, 参考图片/视频生成, 2-10秒
+
+## 阿里云百炼 - 万相 2.5
+
+- [wan2.5 文生图](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-t2i.md): model_id=wan2.5-t2i-preview, task=text-to-image, 异步, 512-1440px, 0.2元/张
+- [wan2.5 图像编辑](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-i2i.md): model_id=wan2.5-i2i-preview, task=image-editing, 单图编辑/多图融合(最多3张), 0.2元/张
+- [wan2.5 文生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-t2v.md): model_id=wan2.5-t2v-preview, task=text-to-video, 5/10秒, 480P/720P/1080P
+- [wan2.5 图生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-i2v.md): model_id=wan2.5-i2v-preview, task=image-to-video, 5/10秒, 480P/720P/1080P

@@ -1,0 +1,53 @@
+hooks:
+  - hooks/copy_md.py
+
+site_name: AI API Docs
+site_description: AI 模型 API 文档集合
+site_url: https://api-docs-9dh.pages.dev
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - meta
+
+nav:
+  - 首页: index.md
+  - 阿里云百炼:
+    - 概览: alibaba/index.md
+    - 万相 2.6:
+      - 文生图: alibaba/wan2.6/wan2.6-t2i.md
+      - 图生图: alibaba/wan2.6/wan2.6-i2i.md
+      - 文生视频: alibaba/wan2.6/wan2.6-t2v.md
+      - 图生视频: alibaba/wan2.6/wan2.6-i2v.md
+      - 视频生视频: alibaba/wan2.6/wan2.6-v2v.md
+    - 万相 2.5:
+      - 文生图: alibaba/wan2.5/wan2.5-t2i.md
+      - 图像编辑: alibaba/wan2.5/wan2.5-i2i.md
+      - 文生视频: alibaba/wan2.5/wan2.5-t2v.md
+      - 图生视频: alibaba/wan2.5/wan2.5-i2v.md
