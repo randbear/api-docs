@@ -1,6 +1,6 @@
 # 火山方舟（豆包）
 
-火山引擎旗下火山方舟大模型服务平台提供的豆包系列视觉生成模型。
+火山引擎旗下火山方舟大模型服务平台提供的豆包系列模型，涵盖大语言模型、视频生成和图像生成。
 
 ## 平台信息
 
@@ -11,6 +11,16 @@
 | API Base URL | `https://ark.cn-beijing.volces.com` |
 | 认证方式 | `Authorization: Bearer $ARK_API_KEY` |
 | 文档 | [volcengine.com/docs/82379](https://www.volcengine.com/docs/82379/1099455) |
+
+## Doubao Seed 系列（大语言模型）
+
+| 模型 | 能力 | 模型ID | 上下文 | 文档 |
+|------|------|--------|--------|------|
+| doubao-seed-1.8 | 深度思考 / 多模态 / 工具调用 / 结构化输出 | `doubao-seed-1-8-251228` | 256k | [查看](doubao-seed/doubao-seed-1.8.md) |
+| doubao-seed-1.6 | 深度思考 / 多模态 / 工具调用 / 结构化输出 | `doubao-seed-1-6-251015` | 256k | [查看](doubao-seed/doubao-seed-1.6.md) |
+| doubao-seed-1.6-lite | 深度思考 / 多模态 / 工具调用 | `doubao-seed-1-6-lite-251015` | 256k | [查看](doubao-seed/doubao-seed-1.6-lite.md) |
+| doubao-seed-1.6-flash | 深度思考 / 视觉定位 / 多模态 / 工具调用 / 结构化输出 | `doubao-seed-1-6-flash-250828` | 256k | [查看](doubao-seed/doubao-seed-1.6-flash.md) |
+| doubao-seed-1.6-vision | 深度思考 / 多模态 / GUI任务 / 工具调用 / 结构化输出 | `doubao-seed-1-6-vision-250815` | 256k | [查看](doubao-seed/doubao-seed-1.6-vision.md) |
 
 ## Seedance 系列（视频生成）
 
@@ -49,5 +59,15 @@
 | doubao-seedance-1.0-lite | — | 10.00 | 5.00 |
 
 视频 token 计算公式：(宽 × 高 × 帧率 × 时长) / 1024
+
+### 大语言模型（按 token 单价，元/百万 token）
+
+| 模型 | 输入 [0,32]k | 输出（短） | 输出（长） |
+|------|-------------|-----------|-----------|
+| doubao-seed-1.8 | 0.80 | 2.00 | 8.00 |
+| doubao-seed-1.6 | 0.80 | 2.00 | 8.00 |
+| doubao-seed-1.6-lite | 0.30 | 0.60 | 2.40 |
+| doubao-seed-1.6-flash | 0.15 | 1.50 | — |
+| doubao-seed-1.6-vision | 0.80 | 8.00 | — |
 
 数据来源：[火山方舟模型价格](https://www.volcengine.com/docs/82379/1544106)

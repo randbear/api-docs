@@ -53,6 +53,12 @@ nav:
       - 图生视频: alibaba/wan2.5/wan2.5-i2v.md
   - 火山方舟（豆包）:
     - 概览: volcengine/index.md
+    - Doubao Seed 对话模型:
+      - doubao-seed-1.8: volcengine/doubao-seed/doubao-seed-1.8.md
+      - doubao-seed-1.6: volcengine/doubao-seed/doubao-seed-1.6.md
+      - doubao-seed-1.6-lite: volcengine/doubao-seed/doubao-seed-1.6-lite.md
+      - doubao-seed-1.6-flash: volcengine/doubao-seed/doubao-seed-1.6-flash.md
+      - doubao-seed-1.6-vision: volcengine/doubao-seed/doubao-seed-1.6-vision.md
     - Seedance 视频生成:
       - Seedance 1.5 Pro: volcengine/seedance/seedance-1.5-pro.md
       - Seedance 1.0 Pro: volcengine/seedance/seedance-1.0-pro.md

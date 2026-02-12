@@ -17,6 +17,14 @@
 - [wan2.5 文生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-t2v.md): model_id=wan2.5-t2v-preview, task=text-to-video, 5/10秒, 480P:0.3元/秒, 720P:0.6元/秒, 1080P:1元/秒
 - [wan2.5 图生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-i2v.md): model_id=wan2.5-i2v-preview, task=image-to-video, 5/10秒, 480P:0.3元/秒, 720P:0.6元/秒, 1080P:1元/秒
 
+## 火山方舟（豆包） - Doubao Seed 对话模型
+
+- [doubao-seed-1.8](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.8.md): model_id=doubao-seed-1-8-251228, task=chat, 256k上下文, 深度思考/多模态/工具调用/结构化输出, 输入0.80元/百万token, 输出2.00-24.00元/百万token
+- [doubao-seed-1.6](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6.md): model_id=doubao-seed-1-6-251015, task=chat, 256k上下文, 深度思考/多模态/工具调用/结构化输出, 输入0.80元/百万token, 输出2.00-24.00元/百万token
+- [doubao-seed-1.6-lite](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-lite.md): model_id=doubao-seed-1-6-lite-251015, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入0.30元/百万token, 输出0.60-12.00元/百万token
+- [doubao-seed-1.6-flash](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-flash.md): model_id=doubao-seed-1-6-flash-250828, task=chat, 256k上下文, 深度思考/视觉定位/多模态/工具调用/结构化输出, 输入0.15元/百万token, 输出1.50-6.00元/百万token
+- [doubao-seed-1.6-vision](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-vision.md): model_id=doubao-seed-1-6-vision-250815, task=chat, 256k上下文, 深度思考/多模态/GUI任务/工具调用/结构化输出, 输入0.80元/百万token, 输出8.00-24.00元/百万token
+
 ## 火山方舟（豆包） - Seedance 视频生成
 
 - [Seedance 1.5 Pro](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.5-pro.md): model_id=doubao-seedance-1-5-pro-251215, task=t2v/i2v/音频/draft, 4-12秒, 480p/720p/1080p, 有声16元/百万token, 无声8元/百万token
