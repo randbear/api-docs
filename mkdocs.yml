@@ -62,3 +62,9 @@ nav:
     - Seedream 图像生成:
       - Seedream 4.5: volcengine/seedream/seedream-4.5.md
       - Seedream 4.0: volcengine/seedream/seedream-4.0.md
+  - MiniMax（海螺）:
+    - 概览: minimax/index.md
+    - Hailuo 视频生成:
+      - Hailuo-02: minimax/hailuo/hailuo-02.md
+      - Hailuo-2.3: minimax/hailuo/hailuo-2.3.md
+      - Hailuo-2.3-Fast: minimax/hailuo/hailuo-2.3-fast.md

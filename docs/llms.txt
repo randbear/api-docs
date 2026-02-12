@@ -29,3 +29,9 @@
 
 - [Seedream 4.5](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.5.md): model_id=doubao-seedream-4-5-251128, task=t2i/i2i/组图, 最高4K, 0.25元/张
 - [Seedream 4.0](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.0.md): model_id=doubao-seedream-4-0-250828, task=t2i/i2i/组图, 最高4K, 0.2元/张
+
+## MiniMax（海螺） - Hailuo 视频生成
+
+- [Hailuo-02](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-02.md): model_id=MiniMax-Hailuo-02, task=t2v/i2v/fl2v, 6-10秒, 512P/768P/1080P, 768P:2元/个, 1080P:3.5元/个, 512P:0.6元/个
+- [Hailuo-2.3](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3.md): model_id=MiniMax-Hailuo-2.3, task=t2v/i2v, 6-10秒, 768P/1080P, 768P:2元/个, 1080P:3.5元/个
+- [Hailuo-2.3-Fast](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3-fast.md): model_id=MiniMax-Hailuo-2.3-Fast, task=i2v, 6-10秒, 768P/1080P, 768P:1.35元/个, 1080P:2.31元/个, 速度提升2.5倍
