@@ -70,6 +70,8 @@ nav:
       - Seedream 4.0: volcengine/seedream/seedream-4.0.md
   - MiniMax（海螺）:
     - 概览: minimax/index.md
+    - M2.5 文本生成:
+      - MiniMax-M2.5: minimax/m2.5/minimax-m2.5.md
     - Hailuo 视频生成:
       - Hailuo-02: minimax/hailuo/hailuo-02.md
       - Hailuo-2.3: minimax/hailuo/hailuo-2.3.md

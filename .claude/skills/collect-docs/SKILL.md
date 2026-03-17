@@ -1,16 +1,16 @@
 ---
 name: collect-docs
-description: 收集 AI 模型 API 文档并以统一格式保存，支持单模型和批量模式。Use when user invokes /collect-docs or asks to "收集文档", "添加模型文档", "collect docs".
-argument-hint: <provider> [model-family] [model] [url]
+description: 收集 AI 模型 API 官方文档并按统一 Markdown 模板保存。用于用户提到“collect docs”“收集文档”“添加模型文档”或直接调用 /collect-docs 时。
+argument-hint: <provider> [model-family] [model ...] [url=<official-doc-url>]
 ---
 
-# collect-docs Skill
+# collect-docs
 
-收集 AI 模型 API 文档并以统一格式保存。
+收集 AI 模型 API 文档，并整理为项目内统一格式的 Markdown。
 
-## 使用方式
+## 用法
 
-```
+```text
 # 单个模型
 /collect-docs alibaba wan2.6-t2i
 
@@ -23,49 +23,49 @@ argument-hint: <provider> [model-family] [model] [url]
 # 整个厂商
 /collect-docs alibaba
 
-# 指定文档 URL
+# 指定官方文档 URL
 /collect-docs alibaba wan2.6-t2i url=https://help.aliyun.com/zh/...
 ```
 
 ## 参数
 
-- `provider`：厂商名称（如 alibaba）
-- `model...`：一个或多个模型标识（如 wan2.6-t2i wan2.6-i2v），也可以是模型族名（如 wan2.6）
-- `url=`（可选）：官方文档 URL，未提供则自动搜索
+- `provider`: 厂商名称，例如 `alibaba`
+- `model-family`: 模型族名称，例如 `wan2.6`
+- `model ...`: 一个或多个模型标识，例如 `wan2.6-t2i wan2.6-i2v`
+- `url=`: 可选。指定官方文档 URL；未提供时先搜索官方文档入口
 
-## 流程
+## 工作流
 
 ### 单模型模式
 
-1. **获取文档**：WebFetch 抓取官方文档页面（url 参数或自动搜索）
-2. **提取信息**：按 CLAUDE.md 模板提取：模型ID、API 端点、请求参数（类型/必填/默认值/取值范围）、请求响应示例、计费
-3. **交叉验证**：关键信息（计费、参数默认值）至少从两个官方页面确认
-4. **写入文件**：`docs/<provider>/<model-family>/<model>.md`
-5. **更新索引**：更新 `docs/llms.txt`、`mkdocs.yml` nav、provider index
+1. 获取文档：优先使用 `url=` 指定的官方页面；否则搜索并定位官方文档。
+2. 提取信息：按仓库根目录 `CLAUDE.md` 中的模板提取模型信息、端点、请求参数、请求示例、响应示例、计费信息。
+3. 交叉验证：关键字段至少在两个官方页面间互相确认。重点检查计费、默认值、分辨率、时长、异步接口等容易变化的内容。
+4. 写入文件：保存到 `docs/<provider>/<model-family>/<model>.md`。
+5. 更新索引：同步更新 `docs/llms.txt`、`mkdocs.yml` 导航以及 provider 索引页。
 
 ### 批量模式
 
-1. **搜索模型列表**：从官方文档站搜索该模型族/厂商下的所有模型
-2. **列出计划**：向用户展示找到的模型列表，确认后再执行
-3. **逐个收集**：对每个模型执行单模型流程
-4. **统一更新索引**：所有模型完成后一次性更新 llms.txt、mkdocs.yml、provider index
+1. 从官方文档中收集该厂商或模型族下的模型列表。
+2. 先向用户展示准备收集的模型清单。
+3. 逐个执行单模型流程。
+4. 全部完成后统一更新索引文件。
 
-## 模板
+## 文档模板
 
-参考项目根目录 `CLAUDE.md` 中的文档模板。
+优先读取仓库根目录的 `CLAUDE.md`。如果不存在，再沿用当前仓库已存在的同类文档结构和字段顺序。
 
-## 数据来源规则
+## 数据源规则
 
-- **只允许从厂商官方文档获取信息**，禁止使用第三方博客、论坛、百科等
-- 官方来源白名单示例：
-  - 阿里云：`help.aliyun.com`、`dashscope.aliyuncs.com`
-  - 其他厂商：对应的官方帮助中心 / API 文档站点
-- WebSearch 仅用于定位官方文档 URL，不使用搜索结果中的摘要内容
-- 如果官方文档中找不到某项信息（如定价），标注为"请参考官方最新定价"，不要猜测或使用非官方数据
+- 只允许使用厂商官方文档、官方帮助中心、官方 API 参考页。
+- 搜索仅用于定位官方 URL，不直接使用搜索摘要或第三方转载内容。
+- 如果官方文档缺少某项信息，明确标注“请参考官方最新说明”，不要猜测。
+- 对“最新价格”“支持分辨率”“速率限制”这类易变信息必须再次核验。
 
-## 注意事项
+## 输出要求
 
-- 所有文档使用中文
-- API 示例使用 curl
-- 确保参数表格完整，列出所有参数
-- 每个文档底部注明数据来源的官方 URL
+- 文档正文使用中文。
+- API 示例优先使用 `curl`。
+- 参数表尽量完整，标明类型、是否必填、默认值和说明。
+- 文档底部列出所用官方来源 URL。
+- 如信息存在冲突，明确说明差异和判断依据。

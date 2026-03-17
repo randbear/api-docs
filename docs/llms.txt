@@ -43,3 +43,7 @@
 - [Hailuo-02](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-02.md): model_id=MiniMax-Hailuo-02, task=t2v/i2v/fl2v, 6-10秒, 512P/768P/1080P, 768P:2元/个, 1080P:3.5元/个, 512P:0.6元/个
 - [Hailuo-2.3](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3.md): model_id=MiniMax-Hailuo-2.3, task=t2v/i2v, 6-10秒, 768P/1080P, 768P:2元/个, 1080P:3.5元/个
 - [Hailuo-2.3-Fast](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3-fast.md): model_id=MiniMax-Hailuo-2.3-Fast, task=i2v, 6-10秒, 768P/1080P, 768P:1.35元/个, 1080P:2.31元/个, 速度提升2.5倍
+
+## MiniMax - M2.5 文本生成
+
+- [MiniMax-M2.5](https://api-docs-9dh.pages.dev/minimax/m2.5/minimax-m2.5.md): model_id=MiniMax-M2.5, task=chat, 204800上下文, Anthropic/OpenAI兼容, 深度思考/工具调用/流式输出, 输入$0.3/M tokens, 输出$1.2/M tokens, 500 RPM, 20000000 TPM
