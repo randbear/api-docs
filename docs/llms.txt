@@ -19,6 +19,10 @@
 
 ## 火山方舟（豆包） - Doubao Seed 对话模型
 
+- [doubao-seed-2.0-pro](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-2.0-pro.md): model_id=doubao-seed-2-0-pro-260215, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入3.2元/百万token, 输出16.0-48.0元/百万token
+- [doubao-seed-2.0-lite](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-2.0-lite.md): model_id=doubao-seed-2-0-lite-260215, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入0.6元/百万token, 输出3.6-10.8元/百万token
+- [doubao-seed-2.0-mini](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-2.0-mini.md): model_id=doubao-seed-2-0-mini-260215, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入0.2元/百万token, 输出2.0-8.0元/百万token
+- [doubao-seed-2.0-code-preview](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-2.0-code-preview.md): model_id=doubao-seed-2-0-code-preview-260215, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入3.2元/百万token, 输出16.0-48.0元/百万token
 - [doubao-seed-1.8](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.8.md): model_id=doubao-seed-1-8-251228, task=chat, 256k上下文, 深度思考/多模态/工具调用/结构化输出, 输入0.80元/百万token, 输出2.00-24.00元/百万token
 - [doubao-seed-1.6](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6.md): model_id=doubao-seed-1-6-251015, task=chat, 256k上下文, 深度思考/多模态/工具调用/结构化输出, 输入0.80元/百万token, 输出2.00-24.00元/百万token
 - [doubao-seed-1.6-lite](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-lite.md): model_id=doubao-seed-1-6-lite-251015, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入0.30元/百万token, 输出0.60-12.00元/百万token
@@ -27,6 +31,7 @@
 
 ## 火山方舟（豆包） - Seedance 视频生成
 
+- [Seedance 2.0](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-2.0.md): model_id=doubao-seedance-2-0, task=音视图文混合参考/体验中心, 当前仅控制台免费体验, 模板库可查看REST示例代码, 正式API暂未开放
 - [Seedance 1.5 Pro](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.5-pro.md): model_id=doubao-seedance-1-5-pro-251215, task=t2v/i2v/音频/draft, 4-12秒, 480p/720p/1080p, 有声16元/百万token, 无声8元/百万token
 - [Seedance 1.0 Pro](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-pro.md): model_id=doubao-seedance-1-0-pro-250528, task=t2v/i2v, 2-12秒, 默认1080p, 15元/百万token
 - [Seedance 1.0 Pro Fast](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-pro-fast.md): model_id=doubao-seedance-1-0-pro-fast-251015, task=t2v/i2v(首帧), 2-12秒, 默认1080p, 4.2元/百万token
@@ -35,6 +40,7 @@
 
 ## 火山方舟（豆包） - Seedream 图像生成
 
+- [Seedream 5.0 Lite](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-5.0-lite.md): model_id=doubao-seedream-5-0-260128, task=t2i/i2i/组图/联网搜索, 最高4K, 0.22元/张
 - [Seedream 4.5](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.5.md): model_id=doubao-seedream-4-5-251128, task=t2i/i2i/组图, 最高4K, 0.25元/张
 - [Seedream 4.0](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.0.md): model_id=doubao-seedream-4-0-250828, task=t2i/i2i/组图, 最高4K, 0.2元/张
 
@@ -44,6 +50,14 @@
 - [Hailuo-2.3](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3.md): model_id=MiniMax-Hailuo-2.3, task=t2v/i2v, 6-10秒, 768P/1080P, 768P:2元/个, 1080P:3.5元/个
 - [Hailuo-2.3-Fast](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3-fast.md): model_id=MiniMax-Hailuo-2.3-Fast, task=i2v, 6-10秒, 768P/1080P, 768P:1.35元/个, 1080P:2.31元/个, 速度提升2.5倍
 
-## MiniMax - M2.5 文本生成
+## MiniMax（海螺） - M2.5 文本生成
 
 - [MiniMax-M2.5](https://api-docs-9dh.pages.dev/minimax/m2.5/minimax-m2.5.md): model_id=MiniMax-M2.5, task=chat, 204800上下文, Anthropic/OpenAI兼容, 深度思考/工具调用/流式输出, 输入$0.3/M tokens, 输出$1.2/M tokens, 500 RPM, 20000000 TPM
+
+## MiniMax（海螺） - Speech 语音合成
+
+- [Speech 2.8](https://api-docs-9dh.pages.dev/minimax/speech/speech-2.8.md): model_id=speech-2.8-hd/speech-2.8-turbo, task=text-to-speech, 最新模型, 语气词标签, 40+语言, 300+音色, HD:3.5元/万字符, Turbo:2元/万字符
+- [Speech 2.6](https://api-docs-9dh.pages.dev/minimax/speech/speech-2.6.md): model_id=speech-2.6-hd/speech-2.6-turbo, task=text-to-speech, 优秀韵律, fluent/whisper情绪, HD:3.5元/万字符, Turbo:2元/万字符
+- [Speech 02](https://api-docs-9dh.pages.dev/minimax/speech/speech-02.md): model_id=speech-02-hd/speech-02-turbo, task=text-to-speech, 高稳定性, 增强小语种, HD:3.5元/万字符, Turbo:2元/万字符
+- [语音克隆](https://api-docs-9dh.pages.dev/minimax/speech/voice-clone.md): task=voice-clone, 10秒音频快速复刻音色, 9.9元/音色
+- [语音设计](https://api-docs-9dh.pages.dev/minimax/speech/voice-design.md): task=voice-design, 文字描述生成音色, 9.9元/音色, 试听2元/万字符

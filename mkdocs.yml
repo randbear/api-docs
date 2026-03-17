@@ -54,18 +54,24 @@ nav:
   - 火山方舟（豆包）:
     - 概览: volcengine/index.md
     - Doubao Seed 对话模型:
+      - doubao-seed-2.0-pro: volcengine/doubao-seed/doubao-seed-2.0-pro.md
+      - doubao-seed-2.0-lite: volcengine/doubao-seed/doubao-seed-2.0-lite.md
+      - doubao-seed-2.0-mini: volcengine/doubao-seed/doubao-seed-2.0-mini.md
+      - doubao-seed-2.0-code-preview: volcengine/doubao-seed/doubao-seed-2.0-code-preview.md
       - doubao-seed-1.8: volcengine/doubao-seed/doubao-seed-1.8.md
       - doubao-seed-1.6: volcengine/doubao-seed/doubao-seed-1.6.md
       - doubao-seed-1.6-lite: volcengine/doubao-seed/doubao-seed-1.6-lite.md
       - doubao-seed-1.6-flash: volcengine/doubao-seed/doubao-seed-1.6-flash.md
       - doubao-seed-1.6-vision: volcengine/doubao-seed/doubao-seed-1.6-vision.md
     - Seedance 视频生成:
+      - Seedance 2.0: volcengine/seedance/seedance-2.0.md
       - Seedance 1.5 Pro: volcengine/seedance/seedance-1.5-pro.md
       - Seedance 1.0 Pro: volcengine/seedance/seedance-1.0-pro.md
       - Seedance 1.0 Pro Fast: volcengine/seedance/seedance-1.0-pro-fast.md
       - Seedance 1.0 Lite T2V: volcengine/seedance/seedance-1.0-lite-t2v.md
       - Seedance 1.0 Lite I2V: volcengine/seedance/seedance-1.0-lite-i2v.md
     - Seedream 图像生成:
+      - Seedream 5.0 Lite: volcengine/seedream/seedream-5.0-lite.md
       - Seedream 4.5: volcengine/seedream/seedream-4.5.md
       - Seedream 4.0: volcengine/seedream/seedream-4.0.md
   - MiniMax（海螺）:
@@ -76,3 +82,9 @@ nav:
       - Hailuo-02: minimax/hailuo/hailuo-02.md
       - Hailuo-2.3: minimax/hailuo/hailuo-2.3.md
       - Hailuo-2.3-Fast: minimax/hailuo/hailuo-2.3-fast.md
+    - Speech 语音合成:
+      - Speech 2.8: minimax/speech/speech-2.8.md
+      - Speech 2.6: minimax/speech/speech-2.6.md
+      - Speech 02: minimax/speech/speech-02.md
+      - 语音克隆: minimax/speech/voice-clone.md
+      - 语音设计（文生音）: minimax/speech/voice-design.md
