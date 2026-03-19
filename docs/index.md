@@ -9,7 +9,7 @@ AI 模型 API 文档集合，以统一格式整理各厂商的模型调用文档
 | Google AI | Nano Banana 2 | [查看](google/index.md) |
 | 阿里云百炼 | 万相 2.6、万相 2.5 | [查看](alibaba/index.md) |
 | 火山方舟（豆包） | Doubao Seed、Seedance、Seedream | [查看](volcengine/index.md) |
-| MiniMax | M2.5、Hailuo | [查看](minimax/index.md) |
+| MiniMax | M2.7、M2.5、Hailuo、Speech | [查看](minimax/index.md) |
 
 ## 关于
 

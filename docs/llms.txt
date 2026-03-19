@@ -28,6 +28,15 @@
 - [doubao-seed-1.6-lite](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-lite.md): model_id=doubao-seed-1-6-lite-251015, task=chat, 256k 上下文, 深度思考/多模态/工具调用, 输入 0.30 元/百万 token, 输出 0.60-12.00 元/百万 token
 - [doubao-seed-1.6-flash](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-flash.md): model_id=doubao-seed-1-6-flash-250828, task=chat, 256k 上下文, 视觉定位/多模态/工具调用/结构化输出, 输入 0.15 元/百万 token, 输出 1.50-6.00 元/百万 token
 - [doubao-seed-1.6-vision](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-vision.md): model_id=doubao-seed-1-6-vision-250815, task=chat, 256k 上下文, 深度思考/多模态/GUI 任务/工具调用/结构化输出, 输入 0.80 元/百万 token, 输出 8.00-24.00 元/百万 token
+- [doubao-seed-2.0-pro](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-2.0-pro.md): model_id=doubao-seed-2-0-pro-260215, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入3.2元/百万token, 输出16.0-48.0元/百万token
+- [doubao-seed-2.0-lite](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-2.0-lite.md): model_id=doubao-seed-2-0-lite-260215, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入0.6元/百万token, 输出3.6-10.8元/百万token
+- [doubao-seed-2.0-mini](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-2.0-mini.md): model_id=doubao-seed-2-0-mini-260215, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入0.2元/百万token, 输出2.0-8.0元/百万token
+- [doubao-seed-2.0-code-preview](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-2.0-code-preview.md): model_id=doubao-seed-2-0-code-preview-260215, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入3.2元/百万token, 输出16.0-48.0元/百万token
+- [doubao-seed-1.8](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.8.md): model_id=doubao-seed-1-8-251228, task=chat, 256k 上下文, 深度思考/多模态/工具调用/结构化输出, 输入 0.80 元/百万 token, 输出 2.00-24.00 元/百万 token
+- [doubao-seed-1.6](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6.md): model_id=doubao-seed-1-6-251015, task=chat, 256k 上下文, 深度思考/多模态/工具调用/结构化输出, 输入 0.80 元/百万 token, 输出 2.00-24.00 元/百万 token
+- [doubao-seed-1.6-lite](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-lite.md): model_id=doubao-seed-1-6-lite-251015, task=chat, 256k 上下文, 深度思考/多模态/工具调用, 输入 0.30 元/百万 token, 输出 0.60-12.00 元/百万 token
+- [doubao-seed-1.6-flash](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-flash.md): model_id=doubao-seed-1-6-flash-250828, task=chat, 256k 上下文, 深度思考/视觉定位/多模态/工具调用/结构化输出, 输入 0.15 元/百万 token, 输出 1.50-6.00 元/百万 token
+- [doubao-seed-1.6-vision](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-vision.md): model_id=doubao-seed-1-6-vision-250815, task=chat, 256k 上下文, 深度思考/多模态/GUI 任务/工具调用/结构化输出, 输入 0.80 元/百万 token, 输出 8.00-24.00 元/百万 token
 
 ## 火山方舟（豆包）- Seedance 视频生成
 
@@ -36,11 +45,13 @@
 - [Seedance 1.0 Pro Fast](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-pro-fast.md): model_id=doubao-seedance-1-0-pro-fast-251015, task=t2v/i2v(首帧), 2-12 秒, 默认 1080p, 4.2 元/百万 token
 - [Seedance 1.0 Lite T2V](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-lite-t2v.md): model_id=doubao-seedance-1-0-lite-t2v-250428, task=t2v, 2-12 秒, 默认 720p, 10 元/百万 token
 - [Seedance 1.0 Lite I2V](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-lite-i2v.md): model_id=doubao-seedance-1-0-lite-i2v-250428, task=i2v(首帧/首尾帧/参考图), 2-12 秒, 默认 720p, 10 元/百万 token
+- [Seedance 2.0](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-2.0.md): model_id=doubao-seedance-2-0, task=音视图文混合参考/体验中心, 当前仅控制台免费体验, 模板库可查看REST示例代码, 正式API暂未开放
 
 ## 火山方舟（豆包）- Seedream 图像生成
 
 - [Seedream 4.5](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.5.md): model_id=doubao-seedream-4-5-251128, task=t2i/i2i/组图, 最高 4K, 0.25 元/张
 - [Seedream 4.0](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.0.md): model_id=doubao-seedream-4-0-250828, task=t2i/i2i/组图, 最高 4K, 0.2 元/张
+- [Seedream 5.0 Lite](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-5.0-lite.md): model_id=doubao-seedream-5-0-260128, task=t2i/i2i/组图/联网搜索, 最高4K, 0.22元/张
 
 ## MiniMax（海螺）- Hailuo 视频生成
 
@@ -52,3 +63,11 @@
 
 - [MiniMax-M2.7](https://api-docs-9dh.pages.dev/minimax/m2.7/minimax-m2.7.md): model_id=MiniMax-M2.7, task=chat, 204800 上下文, Anthropic/OpenAI 兼容, 深度思考/工具调用/Prompt Caching/流式输出, 输入 $0.3/M tokens, 输出 $1.2/M tokens, 500 RPM, 20000000 TPM
 - [MiniMax-M2.5](https://api-docs-9dh.pages.dev/minimax/m2.5/minimax-m2.5.md): model_id=MiniMax-M2.5, task=chat, 204800 上下文, Anthropic/OpenAI 兼容, 深度思考/工具调用/流式输出, 输入 $0.3/M tokens, 输出 $1.2/M tokens, 500 RPM, 20000000 TPM
+
+## MiniMax（海螺） - Speech 语音合成
+
+- [Speech 2.8](https://api-docs-9dh.pages.dev/minimax/speech/speech-2.8.md): model_id=speech-2.8-hd/speech-2.8-turbo, task=text-to-speech, 最新模型, 语气词标签, 40+语言, 300+音色, HD:3.5元/万字符, Turbo:2元/万字符
+- [Speech 2.6](https://api-docs-9dh.pages.dev/minimax/speech/speech-2.6.md): model_id=speech-2.6-hd/speech-2.6-turbo, task=text-to-speech, 优秀韵律, fluent/whisper情绪, HD:3.5元/万字符, Turbo:2元/万字符
+- [Speech 02](https://api-docs-9dh.pages.dev/minimax/speech/speech-02.md): model_id=speech-02-hd/speech-02-turbo, task=text-to-speech, 高稳定性, 增强小语种, HD:3.5元/万字符, Turbo:2元/万字符
+- [语音克隆](https://api-docs-9dh.pages.dev/minimax/speech/voice-clone.md): task=voice-clone, 10秒音频快速复刻音色, 9.9元/音色
+- [语音设计](https://api-docs-9dh.pages.dev/minimax/speech/voice-design.md): task=voice-design, 文字描述生成音色, 9.9元/音色, 试听2元/万字符
