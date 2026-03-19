@@ -1,49 +1,54 @@
 # AI API Docs
 
-> AI 模型 API 文档集合。每个链接指向 markdown 格式的完整 API 文档，包含端点、参数、示例和计费。
+> AI 模型 API 文档集合。每个链接都指向 markdown 格式的完整 API 文档，包含端点、参数、示例和计费。
+
+## Google AI - Nano Banana
+
+- [Nano Banana 2 图像生成](https://api-docs-9dh.pages.dev/google/nano-banana-2/nano-banana-2.md): model_id=gemini-3.1-flash-image-preview, task=text-to-image/image-to-image, 默认 1K, 最高 4K, 支持图像编辑与 Google Search grounding, 标准图像输出约 $0.045/$0.067/$0.101/$0.151（512/1K/2K/4K）
 
 ## 阿里云百炼 - 万相 2.6
 
-- [wan2.6 文生图](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-t2i.md): model_id=wan2.6-t2i, task=text-to-image, 同步/异步, 最高1440x1440, 0.20元/张
-- [wan2.6 图生图](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-i2i.md): model_id=wan2.6-image, task=image-to-image, 单图编辑/多图融合/图文混合, 0.20元/张
-- [wan2.6 文生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-t2v.md): model_id=wan2.6-t2v, task=text-to-video, 2-15秒, 720P/1080P, 多镜头, 720P:0.6元/秒, 1080P:1元/秒
-- [wan2.6 图生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-i2v.md): model_id=wan2.6-i2v|wan2.6-i2v-flash, task=image-to-video, 2-15秒, flash有声0.3-0.5元/秒, flash无声0.15-0.25元/秒, 标准0.6-1元/秒
-- [wan2.6 视频生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-v2v.md): model_id=wan2.6-r2v|wan2.6-r2v-flash, task=reference-to-video, 2-10秒, flash有声0.3-0.5元/秒, flash无声0.15-0.25元/秒, 标准0.6-1元/秒
+- [wan2.6 文生图](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-t2i.md): model_id=wan2.6-t2i, task=text-to-image, 同步/异步, 最高 1440x1440, 0.20 元/张
+- [wan2.6 图生图](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-i2i.md): model_id=wan2.6-image, task=image-to-image, 单图编辑/多图融合/图文混合, 0.20 元/张
+- [wan2.6 文生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-t2v.md): model_id=wan2.6-t2v, task=text-to-video, 2-15 秒, 720P/1080P, 720P:0.6 元/秒, 1080P:1 元/秒
+- [wan2.6 图生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-i2v.md): model_id=wan2.6-i2v|wan2.6-i2v-flash, task=image-to-video, 2-15 秒, flash 有声 0.3-0.5 元/秒, flash 无声 0.15-0.25 元/秒, 标准 0.6-1 元/秒
+- [wan2.6 视频生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.6/wan2.6-v2v.md): model_id=wan2.6-r2v|wan2.6-r2v-flash, task=reference-to-video, 2-10 秒, flash 有声 0.3-0.5 元/秒, flash 无声 0.15-0.25 元/秒, 标准 0.6-1 元/秒
 
 ## 阿里云百炼 - 万相 2.5
 
-- [wan2.5 文生图](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-t2i.md): model_id=wan2.5-t2i-preview, task=text-to-image, 异步, 512-1440px, 0.20元/张
-- [wan2.5 图像编辑](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-i2i.md): model_id=wan2.5-i2i-preview, task=image-editing, 单图编辑/多图融合(最多3张), 0.220177元/张
-- [wan2.5 文生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-t2v.md): model_id=wan2.5-t2v-preview, task=text-to-video, 5/10秒, 480P:0.3元/秒, 720P:0.6元/秒, 1080P:1元/秒
-- [wan2.5 图生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-i2v.md): model_id=wan2.5-i2v-preview, task=image-to-video, 5/10秒, 480P:0.3元/秒, 720P:0.6元/秒, 1080P:1元/秒
+- [wan2.5 文生图](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-t2i.md): model_id=wan2.5-t2i-preview, task=text-to-image, 异步, 512-1440px, 0.20 元/张
+- [wan2.5 图像编辑](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-i2i.md): model_id=wan2.5-i2i-preview, task=image-editing, 单图编辑/多图融合, 0.220177 元/张
+- [wan2.5 文生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-t2v.md): model_id=wan2.5-t2v-preview, task=text-to-video, 5/10 秒, 480P:0.3 元/秒, 720P:0.6 元/秒, 1080P:1 元/秒
+- [wan2.5 图生视频](https://api-docs-9dh.pages.dev/alibaba/wan2.5/wan2.5-i2v.md): model_id=wan2.5-i2v-preview, task=image-to-video, 5/10 秒, 480P:0.3 元/秒, 720P:0.6 元/秒, 1080P:1 元/秒
 
-## 火山方舟（豆包） - Doubao Seed 对话模型
+## 火山方舟（豆包）- Doubao Seed 对话模型
 
-- [doubao-seed-1.8](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.8.md): model_id=doubao-seed-1-8-251228, task=chat, 256k上下文, 深度思考/多模态/工具调用/结构化输出, 输入0.80元/百万token, 输出2.00-24.00元/百万token
-- [doubao-seed-1.6](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6.md): model_id=doubao-seed-1-6-251015, task=chat, 256k上下文, 深度思考/多模态/工具调用/结构化输出, 输入0.80元/百万token, 输出2.00-24.00元/百万token
-- [doubao-seed-1.6-lite](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-lite.md): model_id=doubao-seed-1-6-lite-251015, task=chat, 256k上下文, 深度思考/多模态/工具调用, 输入0.30元/百万token, 输出0.60-12.00元/百万token
-- [doubao-seed-1.6-flash](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-flash.md): model_id=doubao-seed-1-6-flash-250828, task=chat, 256k上下文, 深度思考/视觉定位/多模态/工具调用/结构化输出, 输入0.15元/百万token, 输出1.50-6.00元/百万token
-- [doubao-seed-1.6-vision](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-vision.md): model_id=doubao-seed-1-6-vision-250815, task=chat, 256k上下文, 深度思考/多模态/GUI任务/工具调用/结构化输出, 输入0.80元/百万token, 输出8.00-24.00元/百万token
+- [doubao-seed-1.8](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.8.md): model_id=doubao-seed-1-8-251228, task=chat, 256k 上下文, 深度思考/多模态/工具调用/结构化输出, 输入 0.80 元/百万 token, 输出 2.00-24.00 元/百万 token
+- [doubao-seed-1.6](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6.md): model_id=doubao-seed-1-6-251015, task=chat, 256k 上下文, 深度思考/多模态/工具调用/结构化输出, 输入 0.80 元/百万 token, 输出 2.00-24.00 元/百万 token
+- [doubao-seed-1.6-lite](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-lite.md): model_id=doubao-seed-1-6-lite-251015, task=chat, 256k 上下文, 深度思考/多模态/工具调用, 输入 0.30 元/百万 token, 输出 0.60-12.00 元/百万 token
+- [doubao-seed-1.6-flash](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-flash.md): model_id=doubao-seed-1-6-flash-250828, task=chat, 256k 上下文, 视觉定位/多模态/工具调用/结构化输出, 输入 0.15 元/百万 token, 输出 1.50-6.00 元/百万 token
+- [doubao-seed-1.6-vision](https://api-docs-9dh.pages.dev/volcengine/doubao-seed/doubao-seed-1.6-vision.md): model_id=doubao-seed-1-6-vision-250815, task=chat, 256k 上下文, 深度思考/多模态/GUI 任务/工具调用/结构化输出, 输入 0.80 元/百万 token, 输出 8.00-24.00 元/百万 token
 
-## 火山方舟（豆包） - Seedance 视频生成
+## 火山方舟（豆包）- Seedance 视频生成
 
-- [Seedance 1.5 Pro](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.5-pro.md): model_id=doubao-seedance-1-5-pro-251215, task=t2v/i2v/音频/draft, 4-12秒, 480p/720p/1080p, 有声16元/百万token, 无声8元/百万token
-- [Seedance 1.0 Pro](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-pro.md): model_id=doubao-seedance-1-0-pro-250528, task=t2v/i2v, 2-12秒, 默认1080p, 15元/百万token
-- [Seedance 1.0 Pro Fast](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-pro-fast.md): model_id=doubao-seedance-1-0-pro-fast-251015, task=t2v/i2v(首帧), 2-12秒, 默认1080p, 4.2元/百万token
-- [Seedance 1.0 Lite T2V](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-lite-t2v.md): model_id=doubao-seedance-1-0-lite-t2v-250428, task=t2v, 2-12秒, 默认720p, 10元/百万token
-- [Seedance 1.0 Lite I2V](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-lite-i2v.md): model_id=doubao-seedance-1-0-lite-i2v-250428, task=i2v(首帧/首尾帧/参考图), 2-12秒, 默认720p, 10元/百万token
+- [Seedance 1.5 Pro](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.5-pro.md): model_id=doubao-seedance-1-5-pro-251215, task=t2v/i2v/音频/draft, 4-12 秒, 480p/720p/1080p, 有声 16 元/百万 token
+- [Seedance 1.0 Pro](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-pro.md): model_id=doubao-seedance-1-0-pro-250528, task=t2v/i2v, 2-12 秒, 默认 1080p, 15 元/百万 token
+- [Seedance 1.0 Pro Fast](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-pro-fast.md): model_id=doubao-seedance-1-0-pro-fast-251015, task=t2v/i2v(首帧), 2-12 秒, 默认 1080p, 4.2 元/百万 token
+- [Seedance 1.0 Lite T2V](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-lite-t2v.md): model_id=doubao-seedance-1-0-lite-t2v-250428, task=t2v, 2-12 秒, 默认 720p, 10 元/百万 token
+- [Seedance 1.0 Lite I2V](https://api-docs-9dh.pages.dev/volcengine/seedance/seedance-1.0-lite-i2v.md): model_id=doubao-seedance-1-0-lite-i2v-250428, task=i2v(首帧/首尾帧/参考图), 2-12 秒, 默认 720p, 10 元/百万 token
 
-## 火山方舟（豆包） - Seedream 图像生成
+## 火山方舟（豆包）- Seedream 图像生成
 
-- [Seedream 4.5](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.5.md): model_id=doubao-seedream-4-5-251128, task=t2i/i2i/组图, 最高4K, 0.25元/张
-- [Seedream 4.0](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.0.md): model_id=doubao-seedream-4-0-250828, task=t2i/i2i/组图, 最高4K, 0.2元/张
+- [Seedream 4.5](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.5.md): model_id=doubao-seedream-4-5-251128, task=t2i/i2i/组图, 最高 4K, 0.25 元/张
+- [Seedream 4.0](https://api-docs-9dh.pages.dev/volcengine/seedream/seedream-4.0.md): model_id=doubao-seedream-4-0-250828, task=t2i/i2i/组图, 最高 4K, 0.2 元/张
 
-## MiniMax（海螺） - Hailuo 视频生成
+## MiniMax（海螺）- Hailuo 视频生成
 
-- [Hailuo-02](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-02.md): model_id=MiniMax-Hailuo-02, task=t2v/i2v/fl2v, 6-10秒, 512P/768P/1080P, 768P:2元/个, 1080P:3.5元/个, 512P:0.6元/个
-- [Hailuo-2.3](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3.md): model_id=MiniMax-Hailuo-2.3, task=t2v/i2v, 6-10秒, 768P/1080P, 768P:2元/个, 1080P:3.5元/个
-- [Hailuo-2.3-Fast](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3-fast.md): model_id=MiniMax-Hailuo-2.3-Fast, task=i2v, 6-10秒, 768P/1080P, 768P:1.35元/个, 1080P:2.31元/个, 速度提升2.5倍
+- [Hailuo-02](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-02.md): model_id=MiniMax-Hailuo-02, task=t2v/i2v/fl2v, 6-10 秒, 512P/768P/1080P, 768P:2 元/个, 1080P:3.5 元/个, 512P:0.6 元/个
+- [Hailuo-2.3](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3.md): model_id=MiniMax-Hailuo-2.3, task=t2v/i2v, 6-10 秒, 768P/1080P, 768P:2 元/个, 1080P:3.5 元/个
+- [Hailuo-2.3-Fast](https://api-docs-9dh.pages.dev/minimax/hailuo/hailuo-2.3-fast.md): model_id=MiniMax-Hailuo-2.3-Fast, task=i2v, 6-10 秒, 768P/1080P, 768P:1.35 元/个, 1080P:2.31 元/个, 速度提升 2.5 倍
 
-## MiniMax - M2.5 文本生成
+## MiniMax - M2 文本生成
 
-- [MiniMax-M2.5](https://api-docs-9dh.pages.dev/minimax/m2.5/minimax-m2.5.md): model_id=MiniMax-M2.5, task=chat, 204800上下文, Anthropic/OpenAI兼容, 深度思考/工具调用/流式输出, 输入$0.3/M tokens, 输出$1.2/M tokens, 500 RPM, 20000000 TPM
+- [MiniMax-M2.7](https://api-docs-9dh.pages.dev/minimax/m2.7/minimax-m2.7.md): model_id=MiniMax-M2.7, task=chat, 204800 上下文, Anthropic/OpenAI 兼容, 深度思考/工具调用/Prompt Caching/流式输出, 输入 $0.3/M tokens, 输出 $1.2/M tokens, 500 RPM, 20000000 TPM
+- [MiniMax-M2.5](https://api-docs-9dh.pages.dev/minimax/m2.5/minimax-m2.5.md): model_id=MiniMax-M2.5, task=chat, 204800 上下文, Anthropic/OpenAI 兼容, 深度思考/工具调用/流式输出, 输入 $0.3/M tokens, 输出 $1.2/M tokens, 500 RPM, 20000000 TPM

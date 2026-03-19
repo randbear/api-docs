@@ -38,6 +38,10 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
+  - Google AI:
+    - 概览: google/index.md
+    - Nano Banana 2:
+      - 图像生成: google/nano-banana-2/nano-banana-2.md
   - 阿里云百炼:
     - 概览: alibaba/index.md
     - 万相 2.6:
@@ -70,6 +74,8 @@ nav:
       - Seedream 4.0: volcengine/seedream/seedream-4.0.md
   - MiniMax（海螺）:
     - 概览: minimax/index.md
+    - M2.7 文本生成:
+      - MiniMax-M2.7: minimax/m2.7/minimax-m2.7.md
     - M2.5 文本生成:
       - MiniMax-M2.5: minimax/m2.5/minimax-m2.5.md
     - Hailuo 视频生成:
